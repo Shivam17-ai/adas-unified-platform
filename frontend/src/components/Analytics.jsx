@@ -56,7 +56,7 @@ const Analytics = () => {
               <div style={{ height: '300px' }}>
                 <Bar 
                   data={{
-                    labels: ['Hard Turns', 'Critical Brakes'],
+                    labels: ['Hard Turns', 'Critical Brakes by Keshav Verma'],
                     datasets: [{
                       label: 'Incident Count',
                       data: [historicalData.totalHardTurns, historicalData.totalCriticalBrakes],
