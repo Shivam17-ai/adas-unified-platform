@@ -62,3 +62,33 @@ main{display:grid;grid-template-columns:320px 1fr 280px;gap:0;overflow:hidden;he
 .danger-ring-val{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
 .danger-num{font-family:var(--mono);font-size:30px;font-weight:500;}
 .danger-lbl{font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;}
+/* changes */
+/* Ensure these are at the bottom of your CSS file */
+.progress-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-family: var(--mono); font-size: 11px; }
+.progress-label { width: 20px; color: var(--muted); }
+.progress-bg { flex: 1; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+.progress-fill { height: 100%; border-radius: 2px; transition: width 0.2s, background 0.2s; }
+.progress-val { width: 35px; text-align: right; color: var(--text); }
+.playback-controls { display: flex; align-items: center; gap: 16px; padding: 16px; background: var(--bg2); border-top: 1px solid var(--border); }
+/* Custom Scrolling Style for Left and Right Columns */
+.panel {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--teal) var(--panel-border);
+}
+
+.panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.panel::-webkit-scrollbar-track {
+  background: var(--panel-border);
+  border-radius: 10px;
+}
+
+.panel::-webkit-scrollbar-thumb {
+  background-color: var(--teal);
+  border-radius: 10px;
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 0 5px var(--teal);
+}
